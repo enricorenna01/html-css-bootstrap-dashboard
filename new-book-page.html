@@ -16,9 +16,10 @@
     <!--/Fontawesome-->
     <title>New Book Page</title>
 </head>
-<main>
-     <!--Intestazione della pagina-->
-     <header class="mb-3">
+
+<body>
+    <!--Intestazione della pagina-->
+    <header class="mb-3">
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -53,4 +54,53 @@
     </header>
     <!--/Intestazione della pagina-->
 
-</main>
+    <!--Corpo della pagina-->
+    <main class="container px-3 py-3">
+        <h1>Nuovo Libro</h1>
+
+        <div class="row mb-3">
+            <div class="col-6">
+                <label for="nomeAutore" class="form-label fw-medium">Nome Autore</label>
+                <input type="text" class="form-control" id="nomeAutore" placeholder="Inserisci il nome">
+            </div>
+            <div class="col-6">
+                <label for="cognomeAutore" class="form-label fw-medium">Cognome Autore</label>
+                <input type="text" class="form-control" placeholder="Inserisci il cognome">
+            </div>
+        </div>
+
+        <div class="col-12 mb-3">
+            <label for="titoloLibro" class="form-label fw-medium">Titolo</label>
+            <input type="email" class="form-control" id="titoloLibro" placeholder="Inserisci il titolo del libro">
+            <div id="titoloLibro" class="form-text">Titolo versione italiana</div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-12 col-lg-4 mb-3">
+                <label for="genereLibro" class="form-label fw-medium">Genere</label>
+                <select id="genereLibro" class="form-select">
+                    <option>Inserisci il genere</option>
+                </select>
+            </div>
+            <div class="col-12 col-lg-4 mb-3">
+                <label for="annoPubblicazione" class="form-label fw-medium">Anno di pubblicazione</label>
+                <input type="text" class="form-control" id="annoPubblicazione" placeholder="Inserisci l'anno">
+            </div>
+            <div class="col-12 col-lg-4 mb-3">
+                <label for="codiceISBN#" class="form-label fw-medium">ISBN#</label>
+                <input type="text" class="form-control" id="codiceISBN#" placeholder="Inserisci il codice ISBN#">
+            </div>
+        </div>
+        <hr>
+        <div class="mb-3">
+            <label for="areaTesto" class="form-labe fw-medium mb-1">Note</label>
+            <textarea class="form-control" id="areaTesto" rows="3" placeholder="Inserisci eventuali note sul libro"></textarea>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="check">
+            <label class="form-check-label" for="check">Disponibile anche in digitale</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+    <main>
+    <!--/Corpo della pagina-->
+</body>
